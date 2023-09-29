@@ -30,7 +30,9 @@ requirements:
     - pandas
     - pesummary
     - nbformat
-
+    - bilby
+    - jupyter
+    - nbconvert
 test:
   imports:
     - peconfigurator
