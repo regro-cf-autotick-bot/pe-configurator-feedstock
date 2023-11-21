@@ -28,7 +28,7 @@ requirements:
     - asimov >=0.4.0
     - lalsuite >=7.14
     - pandas
-    - pesummary >= 1.0.2
+    - pesummary >=1.0.2
     - nbformat
     - bilby
     - jupyter
