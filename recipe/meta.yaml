@@ -1,5 +1,5 @@
 {% set name = "pe-configurator" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pe-configurator-{{ version }}.tar.gz
-  sha256: 5261d04032bd1a5ec21f5bfd9f06538cb0905c6fc0110f4a3f3eabac5baee67d
+  sha256: 61e638c1c89a6a5b8687c94c98281dd442f88cccb2f2745ef92a75e95315bf9b
 
 build:
   entry_points:
     - peconfigurator = peconfigurator.proc_samples:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
