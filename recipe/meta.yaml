@@ -1,5 +1,5 @@
 {% set name = "pe-configurator" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pe-configurator-{{ version }}.tar.gz
-  sha256: 61e638c1c89a6a5b8687c94c98281dd442f88cccb2f2745ef92a75e95315bf9b
+  sha256: e6fc00bf467721b95a861266941703610109df3b964f6c20b856beb75a7a27ff
 
 build:
   entry_points:
