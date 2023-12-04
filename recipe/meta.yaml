@@ -18,7 +18,7 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.6, <3.12
     - setuptools >=61.0
     - setuptools-scm >=3.4.3
     - wheel
