@@ -14,7 +14,7 @@ build:
     - peconfigurator = peconfigurator.proc_samples:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
