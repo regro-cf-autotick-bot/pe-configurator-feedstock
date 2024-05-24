@@ -146,6 +146,3 @@ Feedstock Maintainers
 * [@mj-will](https://github.com/mj-will/)
 * [@transientlunatic](https://github.com/transientlunatic/)
 
-
-<!-- dummy commit to enable rerendering -->
-
