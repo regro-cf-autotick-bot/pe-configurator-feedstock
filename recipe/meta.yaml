@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 0fb40775f837e629f4597c429d3b1d7a1415b4a0ad4f3138564d150f5f42c0d3
 
 build:
@@ -14,17 +14,17 @@ build:
     - peconfigurator = peconfigurator.proc_samples:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6, <3.12
+    - python {{ python_min }}
     - setuptools >=61.0
     - setuptools-scm >=3.4.3
     - wheel
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - asimov >=0.4.0
     - lalsuite >=7.14
     - pandas
@@ -41,6 +41,7 @@ test:
     - peconfigurator --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/pe-configurator/
